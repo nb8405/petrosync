@@ -1,0 +1,137 @@
+// Each theme keeps the original tokens (navbar, bg, text, card, accent) for
+// backward compatibility and adds richer tokens used by the onboarding wizard and
+// split-hero sign-in: accentSoft (tinted fills), accent2 (gradient partner),
+// ring (focus outline) and muted (secondary text).
+export const themes = {
+  indianOil: {
+    navbar: "linear-gradient(90deg,#003b95,#ff6b00)",
+    bg: "#f6f7fb",
+    text: "#0f172a",
+    card: "#ffffff",
+    accent: "#ff6b00",
+    accent2: "#003b95",
+    accentSoft: "rgba(255, 107, 0, 0.12)",
+    ring: "rgba(255, 107, 0, 0.35)",
+    muted: "#64748b",
+  },
+
+  blue: {
+    navbar: "linear-gradient(90deg,#0f4c81,#2f80ed)",
+    bg: "#f3f7fc",
+    text: "#0f172a",
+    card: "#ffffff",
+    accent: "#2563eb",
+    accent2: "#1e3a8a",
+    accentSoft: "rgba(37, 99, 235, 0.12)",
+    ring: "rgba(37, 99, 235, 0.32)",
+    muted: "#64748b",
+  },
+
+  green: {
+    navbar: "linear-gradient(90deg,#065f46,#22c55e)",
+    bg: "#f3faf5",
+    text: "#0f172a",
+    card: "#ffffff",
+    accent: "#16a34a",
+    accent2: "#065f46",
+    accentSoft: "rgba(22, 163, 74, 0.12)",
+    ring: "rgba(22, 163, 74, 0.32)",
+    muted: "#5b7066",
+  },
+
+  bpcl: {
+    navbar: "linear-gradient(90deg,#0b4ea2,#f2c230)",
+    bg: "#f5f7fb",
+    text: "#0f172a",
+    card: "#ffffff",
+    accent: "#0b4ea2",
+    accent2: "#f2c230",
+    accentSoft: "rgba(11, 78, 162, 0.12)",
+    ring: "rgba(11, 78, 162, 0.32)",
+    muted: "#64748b",
+  },
+
+  hpcl: {
+    navbar: "linear-gradient(90deg,#0f5ea8,#e11d48)",
+    bg: "#f7f6f8",
+    text: "#0f172a",
+    card: "#ffffff",
+    accent: "#dc2626",
+    accent2: "#0f5ea8",
+    accentSoft: "rgba(220, 38, 38, 0.12)",
+    ring: "rgba(220, 38, 38, 0.32)",
+    muted: "#6b7280",
+  },
+
+  royal: {
+    navbar: "linear-gradient(90deg,#312e81,#6366f1)",
+    bg: "#f5f5fd",
+    text: "#0f172a",
+    card: "#ffffff",
+    accent: "#6366f1",
+    accent2: "#312e81",
+    accentSoft: "rgba(99, 102, 241, 0.12)",
+    ring: "rgba(99, 102, 241, 0.34)",
+    muted: "#6b7280",
+  },
+
+  teal: {
+    navbar: "linear-gradient(90deg,#134e4a,#14b8a6)",
+    bg: "#f2faf9",
+    text: "#0f172a",
+    card: "#ffffff",
+    accent: "#0d9488",
+    accent2: "#134e4a",
+    accentSoft: "rgba(13, 148, 136, 0.12)",
+    ring: "rgba(13, 148, 136, 0.32)",
+    muted: "#5b7672",
+  },
+
+  custom: {
+    navbar: "linear-gradient(90deg,#334155,#0f766e)",
+    bg: "#f7f8fa",
+    text: "#0f172a",
+    card: "#ffffff",
+    accent: "#0f766e",
+    accent2: "#334155",
+    accentSoft: "rgba(15, 118, 110, 0.12)",
+    ring: "rgba(15, 118, 110, 0.32)",
+    muted: "#64748b",
+  },
+
+  neonBlue: {
+    navbar: "linear-gradient(90deg,#001b44,#00c2ff)",
+    bg: "#eef5ff",
+    text: "#0f172a",
+    card: "#ffffff",
+    accent: "#0091ea",
+    accent2: "#001b44",
+    accentSoft: "rgba(0, 145, 234, 0.14)",
+    ring: "rgba(0, 145, 234, 0.34)",
+    muted: "#5b7088",
+  },
+
+  emerald: {
+    navbar: "linear-gradient(90deg,#064e3b,#10b981)",
+    bg: "#f0fbf6",
+    text: "#0f172a",
+    card: "#ffffff",
+    accent: "#10b981",
+    accent2: "#064e3b",
+    accentSoft: "rgba(16, 185, 129, 0.14)",
+    ring: "rgba(16, 185, 129, 0.32)",
+    muted: "#5b7066",
+  },
+
+  dark: {
+    navbar: "linear-gradient(90deg,#080f14,#0d1f2d)",
+    bg: "#080f14",
+    text: "#e2e8f0",
+    card: "#111827",
+    accent: "#00D382",
+    accent2: "#3882F6",
+    accentSoft: "rgba(0, 211, 130, 0.14)",
+    ring: "rgba(0, 211, 130, 0.38)",
+    muted: "#9CA3AF",
+  },
+};

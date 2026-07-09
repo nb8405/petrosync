@@ -1,0 +1,13 @@
+/opt/petrosync/server/logs/access.log
+/opt/petrosync/server/logs/application.log
+/opt/petrosync/server/logs/error.log
+/opt/petrosync/server/logs/security.log {
+  daily
+  rotate 30
+  missingok
+  notifempty
+  compress
+  delaycompress
+  copytruncate
+  create 0640 petrosync petrosync
+}

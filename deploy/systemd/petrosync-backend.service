@@ -1,0 +1,27 @@
+[Unit]
+Description=PetroSync Node.js backend
+After=network-online.target postgresql.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=petrosync
+Group=petrosync
+WorkingDirectory=/opt/petrosync/server
+EnvironmentFile=/etc/petrosync/backend.env
+ExecStart=/usr/bin/node /opt/petrosync/server/index.js
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+ReadWritePaths=/opt/petrosync/server/logs /opt/petrosync/server/backups /opt/petrosync/server/exports
+AmbientCapabilities=
+CapabilityBoundingSet=
+LimitNOFILE=65535
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
